@@ -11,7 +11,7 @@ from <http://tomcat.apache.org/download-70.cgi>.
 - **Apache jMeter**: Result data has been generated through jMeter script; the latest release is available 
 from <http://jmeter.apache.org/download_jmeter.cgi>.
 
-If TEAM Engine is already installed into the machine then you can directly start from cloning the teamengine-inegration-testing otherwise,follow this link [TEAM Engine Installation Guide](https://github.com/opengeospatial/teamengine/blob/master/doc/en/index.rst) then move forward.
+If TEAM Engine is already installed into the machine then you can directly start from cloning the teamengine-integration-testing otherwise,follow this link [TEAM Engine Installation Guide](https://github.com/opengeospatial/teamengine/blob/master/doc/en/index.rst) then move forward.
 
 ### Get the source code 
 
@@ -38,10 +38,10 @@ against the top-level POM.
         						|-- resources
         				|-- LICENCE
         				|-- pom.xml
-        				|-- README.d
+        				|-- README.md
                     
       	        
-2. Now create a directory in your machine ex - teamengine-integration-testing(you can give any name) and copy following folders according to steps given below 
+2. Now create a directory in your machine, for example 'teamengine-integration-testing' (you can give any name) and copy following files and folders according to steps given below 
 
  - Navigate to  teamengine-integration-testing directory.
          
@@ -49,9 +49,9 @@ against the top-level POM.
   
  - Go to
    
-    teamengine-integration-testing(cloned repository) -> src -> site -> resources -> script -> jmeter 
+    teamengine-integration-testing (cloned repository) -> src -> site -> resources -> script -> jmeter 
     
-  from this location copy all the folder's(like csw202,gml32,kml22,sos10 .....etc) and paste them into teamengine-integration-testing(directory created by you)
+  from this location copy all the folder's(like csw202,gml32,kml22,sos10 .....etc) and paste them into teamengine-integration-testing (directory created by you)
  including teamenginePlan.jmx
  
  - Copy shell script from teamengine-integration-testing -> src -> site -> resources -> script -> shell-script and paste it to teamengine-integration-testing
