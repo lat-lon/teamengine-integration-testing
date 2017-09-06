@@ -10,21 +10,25 @@
 	<description>The repository contains code and instructions to test TEAM Engine with selected Executable Test Scripts and Reference Implementations and files.</description>
 
 	<url>http://opengeospatial.github.io/teamengine-integration-testing/</url>
+
 	<licenses>
 		<license>
 			<name>Apache License, Version 2.0</name>
 			<url>http://opensource.org/licenses/Apache-2.0</url>
 		</license>
 	</licenses>
+
 	<organization>
 		<name>Open Geospatial Consortium</name>
 		<url>http://www.opengeospatial.org/</url>
 	</organization>
+
 	<scm>
 		<url>https://github.com/opengeospatial/teamengine-integration-testing</url>
 		<connection>scm:git:https://github.com/opengeospatial/teamengine-integration-testing.git</connection>
 		<developerConnection>scm:git:git@github.com:opengeospatial/teamengine-integration-testing.git</developerConnection>
 	</scm>
+
 	<issueManagement>
 		<system>GitHub Issue Tracker</system>
 		<url>https://github.com/opengeospatial/teamengine-integration-testing/issues</url>
@@ -114,6 +118,24 @@
 					<tagNameFormat>@{project.version}</tagNameFormat>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
 				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>3.0.0</version>
+				<executions>
+					<execution>
+						<id>ctl</id>
+						<configuration>
+							<descriptors>
+								<descriptor>src/assembly/assembly.xml</descriptor>
+							</descriptors>
+						</configuration>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 			</plugins>
 			<pluginManagement>
