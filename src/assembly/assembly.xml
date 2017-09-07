@@ -16,4 +16,10 @@
       <outputDirectory>${file.separator}</outputDirectory>
     </fileSet>
   </fileSets>
+  <files>
+    <file>
+      <source>${basedir}/README.md</source>
+      <filtered>true</filtered>
+    </file>
+  </files>
 </assembly>
